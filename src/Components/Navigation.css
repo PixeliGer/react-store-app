@@ -1,0 +1,34 @@
+.store-navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(45deg,#ef8d9c 40%, #ffc39e 100%);
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.65);
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.main {
+  padding: 1rem;
+  margin-top: 52px;
+}
+
+nav a.active {
+  background-color: rgba(238, 238, 238, 0.150);
+}

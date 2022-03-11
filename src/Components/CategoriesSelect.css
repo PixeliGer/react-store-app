@@ -1,0 +1,61 @@
+/* Reset Select */
+select {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+.select {
+  font-style: normal;
+  box-shadow:0 20px 40px -14px rgba(0, 0, 0, 0.65);
+  border: 2px solid #bdc3c7;
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: rgb(80, 80, 80);
+  cursor: pointer;
+}
+
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  color: #7f8c8d;
+  background: #fff;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+  border-left: 2px solid #bdc3c7;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #bdc3c7;
+}

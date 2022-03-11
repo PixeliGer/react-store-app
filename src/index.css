@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: "Quicksand", serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-row {
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  background-color: #ffffff;
+}
+
+.product-image-wrp > img {
+  display: inline-block;
+  height: 80%;
+}
+
+.rating-orange {
+  color: tomato;
+}
+
+.rating-yellow {
+  color:gold;
+}
+
+.rating-green {
+  color: limegreen;
 }
