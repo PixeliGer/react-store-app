@@ -52,7 +52,7 @@ function Products() {
           categories={categories}
         />
       </div>
-      <ProductList products={products} />
+      <ProductList products={filteredProducts} />
     </div>
   );
 }
